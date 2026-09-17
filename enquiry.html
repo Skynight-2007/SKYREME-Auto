@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry and Booking: SKYREME Auto</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Website header -->
+    <header>
+        <h1>SKYREME Auto Mechanic Workshop</h1>
+
+        <!-- Main navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main enquiry content -->
+    <main>
+        
+        <h2>Book a Service or Make an Enquiry</h2>
+
+        <p>Complete the form below to provide your vehicle details and tell us about the service or repair you require.</p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+
+                <legend>Customer Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="tel" id="phone" name="phone" placeholder="marcusclink27@gmail.com" required>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Vehicle Information</legend>
+
+                <label for="make">Vehicle Make:</label>
+                <input type="text" id="make" name="make" placeholder="Brand of the car,e.g BMW" required>
+
+                <br><br>
+
+                <label for="model">Vehicle Model:</label>
+                <input type="text" id="model" name="model" placeholder="Specific car name,e.g M3" required>
+
+                <br><br>
+
+                <label for="year">Vehicle Year:</label>
+                <input type="number" id="year" name="year" min="1900" max="2026" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Service Information</legend>
+
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="routine service">Routine Vehicle Service</option>
+                    <option value="engine diagnostics">Engine Testing and Diagnostics</option>
+                    <option value="brake inspection">Brake Inspection</option>
+                    <option value="general repairs">General Vehicle Repairs</option>
+                </select>
+
+                <br><br>
+
+                <label for="fault">Describe the Vehicle Problem:</label>
+
+                <br>
+
+                <textarea id="fault" name="fault" rows="6" cols="40" placeholder="Describe the vehicle's problem" required></textarea>
+
+                <br><br>
+
+                <label for="date">Preferred Service Date:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+
+            <br>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>&copy; 2026 SKYREME Auto Mechanic Workshop</p>
+    </footer>
+    
+</body>
+</html>

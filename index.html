@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYREME Auto Mechanic Workshop</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Website header -->
+    <header>
+        <h1>SKYREME Auto Mechanic Workshop</h1>
+
+        <!-- Main navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+
+
+    <!-- Main homepage content -->
+    <main>
+
+        <!-- 1. THE TOP SECTION: SIDE-BY-SIDE SPLIT FOR LAPTOPS/DESKTOPS -->
+        <div class="top-split-layout">
+            
+            <!-- LEFT COLUMN: WORKSHOP IMAGES SECTION FROM YOUR SKETCH -->
+            <div class="workshop-images-panel">
+                <h2>Reliable Auto Repairs You Can Trust</h2>
+                
+                <!-- Small Images Row (Matches Image 1 and Image 2 from your wireframe layout) -->
+                <div class="small-images-row">
+                    <img src="images/Workshop.jpeg" alt="SKYREME Auto mechanic workshop view 1">
+                    <img src="images/workshop 3.webp" alt="SKYREME Auto mechanic workshop view 2">
+                </div>
+                
+                <!-- Standalone Large Graphic Underneath (Matches Image 3 from your wireframe layout) -->
+                <img src="images/SKYREME Auto workshop.webp" alt="SKYREME Auto mechanic workshop main bay" class="large-banner-img" style="margin-top: 1rem;">
+            </div>
+
+            <!-- RIGHT COLUMN: INTERACTIVE BOOKING FORM FROM YOUR SKETCH -->
+            <div class="booking-form-panel">
+                <h2>Book Your Vehicle Services</h2>
+                <p>Customers can submit an enquiry to request a vehicle service or provide details about a vehicle problem.</p>
+                
+                <!-- Quick input form elements configured to display on the desktop right-hand panel -->
+                <form action="enquiry.html" method="GET">
+                    <p>
+                        <label for="quick-name">Full Name:</label>
+                        <input type="text" id="quick-name" name="name" placeholder="Your Name" required>
+                    </p>
+                    <p>
+                        <label for="quick-phone">Phone:</label>
+                        <input type="text" id="quick-phone" name="phone" placeholder="Your Phone Number" required>
+                    </p>
+                    <p>
+                        <label for="quick-service">Service:</label>
+                        <select id="quick-service" name="service">
+                            <option value="routine">Routine Vehicle Service</option>
+                            <option value="diagnostics">Engine Testing & Diagnostics</option>
+                            <option value="brakes">Brake Inspection</option>
+                        </select>
+                    </p>
+                    <!-- Form actions use our shared high-visibility bright red buttons rule -->
+                    <button type="submit" style="width: 100%; margin-top: 0.5rem;">[ BOOK NOW ]</button>
+                </form>
+            </div>
+
+        </div> <!-- END OF THE TOP SPLIT CONTAINER -->
+
+
+        <!-- 2. THE BOTTOM SECTION: THREE-COLUMN SERVICE GRID -->
+        <h2 style="margin-top: 4rem; text-align: center;">Our Core Services</h2>
+
+        <div class="service-grid">
+            
+            <!-- Service 1 Card Block Container -->
+            <div class="service-card">
+                <h3>Routine Service</h3>
+                <p>SKYREME Auto is an independent car garage that provides reliable routine vehicle servicing and checks.</p>
+            </div>
+
+            <!-- Service 2 Card Block Container -->
+            <div class="service-card">
+                <h3>Engine Testing</h3>
+                <p>Advanced garage engine diagnostics scans and computer performance testing procedures.</p>
+            </div>
+
+            <!-- Service 3 Card Block Container -->
+            <div class="service-card">
+                <h3>Brake inspection</h3>
+                <p>General structural mechanic repairs, caliper updates, and common mechanical system corrections.</p>
+            </div>
+
+        </div> <!-- END OF THREE-COLUMN SERVICE GRID -->
+
+
+        <!-- EXTRA BUSINESS OVERVIEW BOX OUTSIDE THE SPLIT MATRIX -->
+        <section style="margin-top: 4rem;">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide high-quality and honest vehicle repairs at affordable prices.</p>
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>&copy; 2026 SKYREME Auto Mechanic Workshop</p>
+    </footer>
+
+    <!--  Global Fixed Floating Red Booking Shortcut Button -->
+    <a href="enquiry.html" class="fixed-booking-trigger">Book Now</a>
+
+</body>
+</html>
